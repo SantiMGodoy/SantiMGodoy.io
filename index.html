@@ -1,11 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head class="header">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tienda</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="script.js"></script>
 </head>
 <body>
-    <h1>Hola</h1>
+    <header class="header-class">
+        <nav>
+        <ul class="menu-bar">
+            <li class="item-menu"><a href="index.html">Inicio</a></li>
+            <li class="item-menu"><a href="tienda.html">Tienda</a></li>
+            <li class="item-menu"><a href="contacto.html">Contacto</a></li>
+            
+          </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+
+        <section>
+
+            <div class="div-quienes-somos">
+                <h1>¿Quienes somos?</h1>
+            <p>Somos una organización de esports argentina con relevancia en la escena mundial,<br> constituida por amantes de los videojuegos motivados por la pasión latinoamericana que genera competir en los deportes electrónicos.</p>
+            </div>
+            
+
+            <div class="div-quienes-somos">
+                <h1>¿Que logramos?</h1>
+                <p>Luego de años de ardua competencia, 9z se establece como uno de los equipos de esports más importante de Argentina y Latinoamerica,<br>
+                     gracias a hitos históricos para nuestra región como: Primer equipo de esports en clasificar y ganar en un Mayor(Antwerp 2022, Rio 2022 csgo)<br>
+                      Primer equipo de esports en clasificar y llegar a playoffs de Pro League 2023 (csgo) Top 5 (King) en mundial de Fortnite de 2018 Campeón LVP <br>
+                      de League of Legends de 2018 Clasificación a mundial de Fifa del 2018 en Londres (Yago Fawaz) Primera win internacional en Blast Premier 2020 (csgo) <br>
+                       vs Vitality(Top 8 del mundo) Top 20 del mundo en Octubre 2023 y manteniendo (cs2) Clasificación a dos ESL Challenger: Katowice 2023 y ESL 2022 (csgo) <br>
+                        Clasificación a dos IEM: Rio 2023 y Dallas 2023 donde llegamos a playoffs (csgo)</p>
+
+
+            </div>
+
+
+
+        </section>
+
+
+        <section class="carrusel">
+            <button onclick="anteriorImagen()"  >←</button>
+            <img id="imagen-carrusel" src="https://9z.gg/assets/home/Header.png" alt="hola">
+            <button onclick="siguienteImagen()">→</button>
+        </section>
+
+
+    </main>
+
+
+
+    
 </body>
 </html>

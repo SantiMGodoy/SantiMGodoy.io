@@ -1,0 +1,179 @@
+body {
+    font-family: 'Arial', sans-serif; 
+    background-color: #190931; 
+    color: #333;  
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.header-class{
+    background-color: rgb(146, 50, 224);  
+    
+    display: flex;
+   
+    
+}
+
+.menu-bar{
+    list-style-type: none;
+    margin: 0 auto;
+   
+    
+}
+
+.item-menu{
+    background-color: rgb(146, 50, 224);
+    float: left;
+    
+
+
+}
+
+.item-menu a{
+    justify-content: center;
+    display: block;
+    height: 30px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(146, 50, 224);
+    text-align: center;
+    margin-top: 7px;
+    padding: 6px 16px;
+    text-decoration: none;
+
+}
+
+.item-menu a:hover{
+    background-color: rgb(178, 108, 235);
+
+
+}
+
+.carrusel{
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+    height: 400px;
+    width: 100%;
+}
+.carrusel img{
+    
+    max-width: 800px;
+    height: 400px;
+    border-radius: 8px;
+    border: solid 1px white;
+
+}
+
+.carrusel button{
+    
+    
+    height: 50px;
+    border-radius: 10px;
+    font-size: 40px;
+    display: flexbox;
+    transform: translateY(-150px);
+}
+
+.carrusel button:hover{
+    background-color: #9f08db;
+
+
+}
+
+.main{
+    width: 100%;
+
+}
+
+.div-quienes-somos{
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    display: block;
+    width: 90%;
+    border:solid 2px #9f08db;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    
+}
+
+.div-quienes-somos p {
+    transition: font-size 0.1s ease, color 0.5s ease
+
+
+}
+
+.div-quienes-somos:hover{
+    background-color: #8c0ac0;
+    cursor: pointer;
+    font-size: 17px;
+    
+
+}
+
+
+
+
+
+.container-form{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    width: 250px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    border: solid 3px #DC143C;
+    border-radius: 8px;
+}
+
+.label-form{
+    font-size: 18px;
+    font-weight: bold;
+
+
+}
+
+.input-form{
+    font-weight: lighter;
+    border: none; 
+    border-bottom: 1px solid black; 
+    font-size: 16px;
+    outline: none; 
+
+
+}
+
+.botoncito{
+    padding: 8px;
+    font-size: 10px;
+    color: white;
+    background-color:#DC143C;
+    border: none;
+    border-radius: 8px;
+
+
+}
+
+.botoncito:hover{
+    background-color: #c00763;
+    cursor: pointer;
+
+}
+
+
+
+#titulo{
+    margin: 0 auto;
+    text-align: center;
+    width: 300px;
+    color: white;
+    background-color: #DC143C;
+    text-align: center;
+    border-radius: 10px 0 10px 0;
+    margin-top: 5px;
+
+}
+

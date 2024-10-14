@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class="header-class">
+        <nav>
+        <ul class="menu-bar">
+            <li class="item-menu"><a href="index.html">Inicio</a></li>
+            <li class="item-menu"><a href="tienda.html">Tienda</a></li>
+            <li class="item-menu"><a href="contacto.html">Contacto</a></li>
+            
+          </ul>
+        </nav>
+
+        <div class="container-form">
+            <form  action="" novalidate onsubmit="return validar()">
+                <label class="label-form"  for="usuario">Nombre</label>
+                <br>
+                <input class="input-form" onfocus="limpiarError(event)" id="usuario" name="usuario" type="text" maxlength="10"><span style="color: red; display: none;" id="error-usuario">*Nombre invalido</span>
+                <br>
+        
+                <label class="label-form" for="pelicula">Nombre de la pelicula</label>
+                <br>
+                <input class="input-form" onfocus="limpiarError(event)" id="pelicula" name="pelicula" type="text" maxlength="200" name="pelicula" id="" ><span style="color: red; display: none;" id="error-pelicula">*Pelicula invalida</span>
+        
+        
+                <br>
+                <label class="label-form" for="punto">Puntuacion de la pelicula</label>
+                <br>
+                <input class="input-form"  onfocus="limpiarError(event)" id="punto" type="number" minlength="1" maxlength="10"><span style="color: red; display: none;" id="error-punto" >*Puntuacion invalida</span>
+        
+        
+        
+        
+        
+                <br>
+                <label class="label-form" for="email">Email(opcional)</label>
+                <br>
+                <input class="input-form" onfocus="limpiarError(event)" id="email" type="email" ><span style="color: red; display: none;" id="error-email" >*Email invalida</span>
+        
+                <br>
+                <br>
+                <button class="botoncito">Guardar reseña</button>
+            </form>
+
+    </header>
+</body>
+</html>
