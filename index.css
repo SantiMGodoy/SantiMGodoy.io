@@ -192,3 +192,39 @@ body {
 
 }
 
+.container-tarjetas {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+.tarjetas {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 400px;
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tarjetas img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.tarjetas button {
+    background-color: #190931;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.tarjetas button:hover {
+    background-color: #8c0ac0;
+}
