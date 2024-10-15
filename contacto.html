@@ -1,61 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
-</head>
+    <script src="script.js"></script>
 
+</head>
 <body>
     <header class="header-class">
         <nav>
-            <ul class="menu-bar">
-                <li class="item-menu"><a href="index.html">Inicio</a></li>
-                <li class="item-menu"><a href="tienda.html">Tienda</a></li>
-                <li class="item-menu"><a href="contacto.html">Contacto</a></li>
-
-            </ul>
+        <ul class="menu-bar">
+            <li class="item-menu"><a href="index.html">Inicio</a></li>
+            <li class="item-menu"><a href="tienda.html">Tienda</a></li>
+            <li class="item-menu"><a href="contacto.html">Contacto</a></li>
+            
+          </ul>
         </nav>
     </header>
 
+
     <div class="container-form">
-        <form action="" novalidate onsubmit="return validar()">
-            <label class="label-form" for="nombre">Nombre</label>
-            <br>
-            <input class="input-form" onfocus="limpiarError(event)" id="nombre" name="nombre" type="text"
-                maxlength="10"><span style="color: red; display: none;" id="error-nombre">*Nombre invalido</span>
-            <br>
+    <form  action="" autocomplete="off" novalidate onsubmit="return validar()">
 
-            <label class="label-form" for="apellido">Apellido</label>
-            <br>
-            <input class="input-form" onfocus="limpiarError(event)" id="apellido" name="apellido" type="text"
-                maxlength="200" required>
-            <span style="color: red; display: none;" id="error-apellido">*Apellido invalido</span>
+        <h1>Contacto</h1>
+        <label class="label-form"  for="nombre">Nombre</label>
+        <br>
+        <input class="input-form" onfocus="limpiarError(event)" id="nombre" name="usuario" type="text" maxlength="10"><span style="color: red; display: none;" id="error-nombre">*Nombre invalido</span>
+        <br>
+
+        <label  class="label-form" for="telefono">Telefono</label>
+        <br>
+            <input id="telefono" class="input-form" type="text" onfocus="limpiarError(event)"><span style="color: red; display: none;" id="error-telefono">*Telefono invalido</span>
+        <br>
+        <label class="label-form" for="email">Email</label>
+        <br>
+        <input class="input-form" onfocus="limpiarError(event)" id="email" type="email" ><span style="color: red; display: none;" id="error-email" >*Email invalida</span>
+
+        <br>
+        <br>
+        <button class="botoncito">Guardar reseña</button>
+    </form>
+</div>
+
+    <div id="resenas" style="display: none;">
+        <h1 id="titulo">Reseñas de Peliculas</h1>
+
+
+    </div>
 
 
 
-            <br>
-            <label class="label-form" for="telefono">Teléfono</label>
-            <br>
-            <input class="input-form" onfocus="limpiarError(event)" id="telefono" name="telefono" type="tel"
-                pattern="[0-9]{1,10}" required>
-            <span style="color: red; display: none;" id="error-telefono">*Teléfono invalido</span>
-
-
-
-            <br>
-            <label class="label-form" for="email">Email</label>
-            <br>
-            <input class="input-form" onfocus="limpiarError(event)" id="email" type="email"><span
-                style="color: red; display: none;" id="error-email">*Email invalido</span>
-
-            <br>
-            <br>
-            <button class="botoncito">Enviar</button>
-        </form>
-
+    <script src="scrips.js"></script>
+    
 </body>
-
 </html>

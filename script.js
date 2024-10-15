@@ -21,36 +21,28 @@ mostrarImagen();
 
 function validar(){
     let errorflag=false;
-    const usuario = document.getElementById('usuario');
-    const peli = document.getElementById('pelicula');
-    const punto=document.getElementById('punto');
+    const nombre = document.getElementById('nombre');
     const mail=document.getElementById('email');
+    const numero= document.getElementById('telefono');
     const validemail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    const validtel= /^(?:\+?54\s?)?\d{10}$/;
 
 
-    if(usuario.value == "" ||usuario.value.length >10  ){
-        const usererror=document.getElementById('error-usuario');
-        usererror.style.display="block";
-        usuario.style.borderColor="red"
+    if(nombre.value == "" ||nombre.value.length >30  ){
+        const nombreerror=document.getElementById('error-nombre');
+        nombreerror.style.display="block";
+        nombre.style.borderColor="red"
         errorflag=true;
     }
 
-    if(peli.value=="" || peli.value.length >200){
-        const pelierror=document.getElementById('error-pelicula');
-        pelierror.style.display="block";
-        peli.style.borderColor="red"
-        errorflag=true;
-
-    }
-
-    if(punto.value== "" || punto.value <1 || punto.value >10){
-        const puntoerror=document.getElementById('error-punto')
-        puntoerror.style.display="block";
-        punto.style.borderColor="red"
+    if(!validtel.test(numero.value)){
+        const numeroerror=document.getElementById('error-telefono');
+        numeroerror.style.display="block";
+        numeroerror.style.borderColor="red";
         errorflag=true;
     }
 
-    if(mail.value !== "" && !validemail.test(mail.value)){
+    if(!validemail.test(mail.value)){
         const emailerror = document.getElementById('error-email');
         emailerror.style.display = "block";
         
@@ -59,7 +51,7 @@ function validar(){
     }
 
 
-    if(!errorflag && mail.value ==""){
+    if(!errorflag){
         const resultado= document.getElementById('resenas');
         let reseña = document.createElement('h3');
         reseña.innerHTML=`${usuario.value} dice que ${peli.value} tiene una puntuacion de ${punto.value}`;
@@ -97,5 +89,4 @@ function limpiarError(event){
     event.target.style.borderColor = "black";
 
 }
-
 

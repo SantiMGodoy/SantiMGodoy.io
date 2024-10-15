@@ -133,30 +133,69 @@ body {
 
 
 .container-form{
-    position: relative;
-    height: 340px;
-    width: 440px;
-    top: 100px;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    margin: 20px auto;
-    background-color:#8c0ac0;
+    margin: 0 auto;
+    
+    
+    margin: 0 auto;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
     text-align: center;
-    border: solid 3px #190931;
+    border: solid 3px #8c0ac0;
     border-radius: 8px;
+    margin-top: 50px;
+    padding-top: 100px;
+    padding-bottom: 10px;
 }
 
 .label-form{
-    font-size: 28px;
+    font-size: 24px;
     font-weight: bold;
+    color: #190931;
+
 }
 
 .input-form{
     font-weight: lighter;
     border: none; 
     border-bottom: 1px solid black; 
-    font-size: 28px;
+    font-size: 16px;
     outline: none; 
+
+
+}
+
+
+
+#resenas{
+    bottom: 10%;
+    border: solid 3px red;
+    margin: 0 auto;
+    max-width: 400px;
+    max-height: 300px;
+    margin-top: 10px;
+    border-radius: 8px;
+    background-color: #dd7086;
+    
+
+}
+
+#titulo{
+    margin: 0 auto;
+    text-align: center;
+    width: 300px;
+    color: white;
+    background-color: #bb14dc;
+    text-align: center;
+    border-radius: 10px 0 10px 0;
+    margin-top: 5px;
+
+}
+
+#resenas h3{
+    font-size: 13px;
+   text-align: center;
+    color: aqua;
 
 
 }
@@ -165,7 +204,7 @@ body {
     padding: 8px;
     font-size: 26px;
     color: white;
-    background-color:#190931;
+    background-color:#8c0ac0;
     border: none;
     border-radius: 8px;
 
@@ -173,7 +212,7 @@ body {
 }
 
 .botoncito:hover{
-    background-color: #c00763;
+    background-color: #6526c4;
     cursor: pointer;
 
 }
