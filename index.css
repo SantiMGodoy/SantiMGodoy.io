@@ -12,13 +12,12 @@ body {
     background-color: rgb(146, 50, 224);  
     
     display: flex;
-   
+   height: 40px;
     
 }
 
 .menu-bar{
     list-style-type: none;
-    margin: 0 auto;
    
     
 }
@@ -32,21 +31,20 @@ body {
 }
 
 .item-menu a{
+    position: relative;
     justify-content: center;
     display: block;
-    height: 30px;
     color: rgb(255, 255, 255);
     background-color: rgb(146, 50, 224);
     text-align: center;
-    margin-top: 7px;
-    padding: 6px 16px;
+    padding: 0px 16px;
     text-decoration: none;
-
+    height: 20px;
+    bottom: 5px;
 }
 
 .item-menu a:hover{
     background-color: rgb(178, 108, 235);
-
 
 }
 
@@ -66,21 +64,37 @@ body {
 
 }
 
-.carrusel button{
-    
-    
-    height: 50px;
-    border-radius: 10px;
-    font-size: 40px;
-    display: flexbox;
-    transform: translateY(-150px);
-}
+
 
 .carrusel button:hover{
     background-color: #9f08db;
 
 
 }
+
+.flecha {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    transform: translateY(-350%);
+    transition: background-color 0.3s;
+}
+
+.flecha:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.izquierda {
+    left: 10px;
+}
+
+.derecha {
+    right: 10px;
+}
+
+
 
 .main{
     width: 100%;
@@ -119,28 +133,29 @@ body {
 
 
 .container-form{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin: 0 auto;
-    width: 250px;
-    background-color: rgb(255, 255, 255);
+    position: relative;
+    height: 340px;
+    width: 440px;
+    top: 100px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    margin: 20px auto;
+    background-color:#8c0ac0;
     text-align: center;
-    border: solid 3px #DC143C;
+    border: solid 3px #190931;
     border-radius: 8px;
 }
 
 .label-form{
-    font-size: 18px;
+    font-size: 28px;
     font-weight: bold;
-
-
 }
 
 .input-form{
     font-weight: lighter;
     border: none; 
     border-bottom: 1px solid black; 
-    font-size: 16px;
+    font-size: 28px;
     outline: none; 
 
 
@@ -148,9 +163,9 @@ body {
 
 .botoncito{
     padding: 8px;
-    font-size: 10px;
+    font-size: 26px;
     color: white;
-    background-color:#DC143C;
+    background-color:#190931;
     border: none;
     border-radius: 8px;
 
