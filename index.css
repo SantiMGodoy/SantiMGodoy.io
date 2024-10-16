@@ -1,75 +1,70 @@
 body {
-    font-family: 'Arial', sans-serif; 
-    background-color: #190931; 
-    color: #333;  
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(182, 132, 221);
+    color: #333;
     margin: 0;
     padding: 0;
 }
 
 
 
-.header-class{
-    background-color: rgb(146, 50, 224);  
-    
+.header-class {
+    background-color: #190931;
     display: flex;
-   height: 40px;
-    
+    height: 50px;
+    border-block: 1px solid #eeeeee;
+    padding-block:0.2rem;
+    text-transform: uppercase;
 }
 
-.menu-bar{
+.menu-bar {
     list-style-type: none;
-   
-    
+
+
 }
 
-.item-menu{
-    background-color: rgb(146, 50, 224);
+.item-menu {
+    background-color: #190931;
     float: left;
-    
-
-
 }
 
-.item-menu a{
+.item-menu a {
     position: relative;
     justify-content: center;
     display: block;
     color: rgb(255, 255, 255);
-    background-color: rgb(146, 50, 224);
+    background-color: #190931;
     text-align: center;
     padding: 0px 16px;
     text-decoration: none;
     height: 20px;
-    bottom: 5px;
 }
 
-.item-menu a:hover{
+.item-menu a:hover {
     background-color: rgb(178, 108, 235);
 
 }
 
-.carrusel{
+.carrusel {
     margin: 0 auto;
     text-align: center;
     display: inline-block;
     height: 400px;
     width: 100%;
+    position: relative;
+    /* Añadir posición relativa */
+    border-radius: solid white;
 }
-.carrusel img{
-    
-    max-width: 800px;
-    height: 400px;
+
+.carrusel-contenedor {
+    position: relative;
+    /* Añadir posición relativa */
+}
+
+.carrusel img {
+    width: 100%;
+    height: 854px;
     border-radius: 8px;
-    border: solid 1px white;
-
-}
-
-
-
-.carrusel button:hover{
-    background-color: #9f08db;
-
-
 }
 
 .flecha {
@@ -78,148 +73,112 @@ body {
     padding: 10px;
     cursor: pointer;
     font-size: 24px;
-    transform: translateY(-350%);
+    position: absolute;
+    /* Cambiar a posición absoluta */
+    top: 50%;
+    /* Centrar verticalmente */
+    transform: translateY(-50%);
+    /* Ajustar el centrado */
     transition: background-color 0.3s;
+}
+
+.izquierda {
+    left: 10px;
+    /* Posición desde la izquierda */
+}
+
+.derecha {
+    right: 10px;
+    /* Posición desde la derecha */
 }
 
 .flecha:hover {
     background-color: rgba(255, 255, 255, 1);
 }
 
-.izquierda {
-    left: 10px;
-}
-
-.derecha {
-    right: 10px;
-}
 
 
 
-.main{
+.main {
     width: 100%;
 
 }
 
-.div-quienes-somos{
+.div-quienes-somos {
     margin: 0 auto;
     color: white;
     text-align: center;
     border-radius: 10px;
     display: block;
     width: 90%;
-    border:solid 2px #9f08db;
+    border: solid 2px #9f08db;
     margin-bottom: 30px;
     margin-top: 10px;
-    
+
 }
 
 .div-quienes-somos p {
     transition: font-size 0.1s ease, color 0.5s ease
-
-
 }
 
-.div-quienes-somos:hover{
+.div-quienes-somos:hover {
     background-color: #8c0ac0;
     cursor: pointer;
     font-size: 17px;
-    
+
 
 }
 
 
-
-
-
-.container-form{
-    margin: 0 auto;
-    
-    
-    margin: 0 auto;
-    width: 400px;
-    height: 400px;
-    background-color: rgb(255, 255, 255);
+.container-form {
+    position: relative;
+    height: 340px;
+    width: 440px;
+    top: 100px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    margin: 20px auto;
+    background-color: #8c0ac0;
     text-align: center;
-    border: solid 3px #8c0ac0;
+    border: solid 3px #190931;
     border-radius: 8px;
-    margin-top: 50px;
-    padding-top: 100px;
-    padding-bottom: 10px;
 }
 
-.label-form{
-    font-size: 24px;
+.label-form {
+    font-size: 28px;
     font-weight: bold;
-    color: #190931;
-
 }
 
-.input-form{
+.input-form {
     font-weight: lighter;
-    border: none; 
-    border-bottom: 1px solid black; 
-    font-size: 16px;
-    outline: none; 
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 28px;
+    outline: none;
 
 
 }
 
-
-
-#resenas{
-    bottom: 10%;
-    border: solid 3px red;
-    margin: 0 auto;
-    max-width: 400px;
-    max-height: 300px;
-    margin-top: 10px;
-    border-radius: 8px;
-    background-color: #dd7086;
-    
-
-}
-
-#titulo{
-    margin: 0 auto;
-    text-align: center;
-    width: 300px;
-    color: white;
-    background-color: #bb14dc;
-    text-align: center;
-    border-radius: 10px 0 10px 0;
-    margin-top: 5px;
-
-}
-
-#resenas h3{
-    font-size: 13px;
-   text-align: center;
-    color: aqua;
-
-
-}
-
-.botoncito{
+.botoncito {
     padding: 8px;
     font-size: 26px;
     color: white;
-    background-color:#8c0ac0;
+    background-color: #190931;
     border: none;
     border-radius: 8px;
 
 
 }
 
-.botoncito:hover{
-    background-color: #6526c4;
+.botoncito:hover {
+    background-color: #c00763;
     cursor: pointer;
 
 }
 
 
 
-#titulo{
+#titulo {
     margin: 0 auto;
     text-align: center;
     width: 300px;
@@ -266,4 +225,74 @@ body {
 
 .tarjetas button:hover {
     background-color: #8c0ac0;
+}
+
+.footer {
+    background-color: #190931;
+    color: white;
+    padding: 40px 20px;
+    text-align: left;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    position: relative;
+    flex: 1;
+    min-width: 200px;
+    height: 120px;
+    margin: 10px;
+    text-align: center;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 5px 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.redes a {
+    color: white;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.redes a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    position: relative;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 14px;
+    top: 30px;
+}
+
+.logo {
+    max-width: 200px;
+    height: auto;
+    display: block;
 }

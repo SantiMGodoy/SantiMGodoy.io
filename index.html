@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head class="header">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,36 +8,55 @@
     <link rel="stylesheet" href="index.css">
     <script src="script.js"></script>
 </head>
+
 <body>
     <header class="header-class">
         <nav>
-        <ul class="menu-bar">
-            <li class="item-menu"><a href="index.html">Inicio</a></li>
-            <li class="item-menu"><a href="tienda.html">Tienda</a></li>
-            <li class="item-menu"><a href="contacto.html">Contacto</a></li>
-            
-          </ul>
+            <ul class="menu-bar">
+                <li class="item-menu"><a href="index.html">Inicio</a></li>
+                <li class="item-menu"><a href="tienda.html">Tienda</a></li>
+                <li class="item-menu"><a href="contacto.html">Contacto</a></li>
+
+            </ul>
         </nav>
     </header>
 
     <main class="main">
 
+
+
+        <section class="carrusel">
+            <div class="carrusel-contenedor">
+                <button class="flecha izquierda" onclick="anteriorImagen()">&#9664;</button>
+                <img id="imagen-carrusel" src="https://9z.gg/assets/home/Header.png" alt="hola">
+                <button class="flecha derecha" onclick="siguienteImagen()">&#9654;</button>
+            </div>
+        </section>
+
+
         <section>
 
             <div class="div-quienes-somos">
                 <h1>¿Quienes somos?</h1>
-            <p>Somos una organización de esports argentina con relevancia en la escena mundial,<br> constituida por amantes de los videojuegos motivados por la pasión latinoamericana que genera competir en los deportes electrónicos.</p>
+                <p>Somos una organización de esports argentina con relevancia en la escena mundial,<br> constituida por
+                    amantes de los videojuegos motivados por la pasión latinoamericana que genera competir en los
+                    deportes electrónicos.</p>
             </div>
-            
+
 
             <div class="div-quienes-somos">
                 <h1>¿Que logramos?</h1>
-                <p>Luego de años de ardua competencia, 9z se establece como uno de los equipos de esports más importante de Argentina y Latinoamerica,<br>
-                     gracias a hitos históricos para nuestra región como: Primer equipo de esports en clasificar y ganar en un Mayor(Antwerp 2022, Rio 2022 csgo)<br>
-                      Primer equipo de esports en clasificar y llegar a playoffs de Pro League 2023 (csgo) Top 5 (King) en mundial de Fortnite de 2018 Campeón LVP <br>
-                      de League of Legends de 2018 Clasificación a mundial de Fifa del 2018 en Londres (Yago Fawaz) Primera win internacional en Blast Premier 2020 (csgo) <br>
-                       vs Vitality(Top 8 del mundo) Top 20 del mundo en Octubre 2023 y manteniendo (cs2) Clasificación a dos ESL Challenger: Katowice 2023 y ESL 2022 (csgo) <br>
-                        Clasificación a dos IEM: Rio 2023 y Dallas 2023 donde llegamos a playoffs (csgo)</p>
+                <p>Luego de años de ardua competencia, 9z se establece como uno de los equipos de esports más importante
+                    de Argentina y Latinoamerica,<br>
+                    gracias a hitos históricos para nuestra región como: Primer equipo de esports en clasificar y ganar
+                    en un Mayor(Antwerp 2022, Rio 2022 csgo)<br>
+                    Primer equipo de esports en clasificar y llegar a playoffs de Pro League 2023 (csgo) Top 5 (King) en
+                    mundial de Fortnite de 2018 Campeón LVP <br>
+                    de League of Legends de 2018 Clasificación a mundial de Fifa del 2018 en Londres (Yago Fawaz)
+                    Primera win internacional en Blast Premier 2020 (csgo) <br>
+                    vs Vitality(Top 8 del mundo) Top 20 del mundo en Octubre 2023 y manteniendo (cs2) Clasificación a
+                    dos ESL Challenger: Katowice 2023 y ESL 2022 (csgo) <br>
+                    Clasificación a dos IEM: Rio 2023 y Dallas 2023 donde llegamos a playoffs (csgo)</p>
 
 
             </div>
@@ -46,17 +66,41 @@
         </section>
 
 
-        <section class="carrusel">
-            <button class="flecha izquierda" onclick="anteriorImagen()">&#9664;</button>
-            <img id="imagen-carrusel" src="https://9z.gg/assets/home/Header.png" alt="hola">
-            <button class="flecha derecha" onclick="siguienteImagen()">&#9654;</button>
-        </section>
-        
-
     </main>
 
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <img src="https://i.ibb.co/MVY9Ynj/1729078675562-fotor-bg-remover-202410168384.png" alt="9z Logo"
+                    class="logo">
+
+            </div>
 
 
-    
+
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>Email: info@9z.gg</p>
+                <p>Teléfono: +54 9 12 1234-5678</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Redes Sociales</h3>
+                <div class="redes">
+                    <p><a href="https://twitter.com/9zteam" target="_blank">Twitter</a></p>
+                    <p><a href="https://www.instagram.com/9zteam/" target="_blank">Instagram</a></p>
+                    <p><a href="https://www.twitch.tv/9zteam/" target="_blank">Twitch</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 9z Esports. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+
+
 </body>
+
 </html>
