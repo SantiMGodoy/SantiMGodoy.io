@@ -6,14 +6,26 @@ function mostrarImagen() {
 }
 
 function siguienteImagen(){
-    indice = (indice + 1) % imagenes.length;
+   if(indice == imagenes.length -1){
+        indice=0;
+        mostrarImagen();
+   }else{
+    indice ++;
     mostrarImagen();
+   }
+    
+    
     
 }
 
 function anteriorImagen(){
-    indice = (indice - 1 + imagenes.length) % imagenes.length;
+    if(indice == 0){
+        indice= imagenes.length -1;
+        mostrarImagen();
+   }else{
+    indice --;
     mostrarImagen();
+   }
     
 }
 mostrarImagen();

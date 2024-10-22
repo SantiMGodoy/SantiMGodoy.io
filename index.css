@@ -130,54 +130,6 @@ body {
 }
 
 
-.container-form {
-    position: relative;
-    height: 340px;
-    width: 440px;
-    top: 100px;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    margin: 20px auto;
-    background-color: #8c0ac0;
-    text-align: center;
-    border: solid 3px #190931;
-    border-radius: 8px;
-}
-
-.label-form {
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.input-form {
-    font-weight: lighter;
-    border: none;
-    border-bottom: 1px solid black;
-    font-size: 28px;
-    outline: none;
-
-
-}
-
-.botoncito {
-    padding: 8px;
-    font-size: 26px;
-    color: white;
-    background-color: #190931;
-    border: none;
-    border-radius: 8px;
-
-
-}
-
-.botoncito:hover {
-    background-color: #c00763;
-    cursor: pointer;
-
-}
-
-
-
 #titulo {
     margin: 0 auto;
     text-align: center;
@@ -190,42 +142,7 @@ body {
 
 }
 
-.container-tarjetas {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
 
-
-.tarjetas {
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    width: 400px;
-    margin: 15px;
-    padding: 10px;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.tarjetas img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.tarjetas button {
-    background-color: #190931;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    cursor: pointer;
-}
-
-.tarjetas button:hover {
-    background-color: #8c0ac0;
-}
 
 .footer {
     background-color: #190931;
