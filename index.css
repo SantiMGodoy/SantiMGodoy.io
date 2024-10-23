@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: rgb(182, 132, 221);
+    background-color: rgb(135, 75, 180);
     color: #333;
     margin: 0;
     padding: 0;
@@ -13,7 +13,7 @@ body {
     display: flex;
     height: 50px;
     border-block: 1px solid #eeeeee;
-    padding-block:0.2rem;
+    padding-block: 0.2rem;
     text-transform: uppercase;
 }
 
@@ -108,25 +108,29 @@ body {
     margin: 0 auto;
     color: white;
     text-align: center;
-    border-radius: 10px;
     display: block;
-    width: 90%;
-    border: solid 2px #9f08db;
+    width: 100%;
+    border-top: solid 2px white;
+    border-bottom: solid 2px white;
     margin-bottom: 30px;
     margin-top: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
 
+.div-quienes-somos h1 {
+    font-size: 20px;
+    text-transform: uppercase;
 }
 
 .div-quienes-somos p {
-    transition: font-size 0.1s ease, color 0.5s ease
+    font-size: 20px;
+    padding-bottom: 20px;
 }
 
 .div-quienes-somos:hover {
-    background-color: #8c0ac0;
+    background-color: #190931;
     cursor: pointer;
-    font-size: 17px;
-
-
+    transform: scale(1.05);
 }
 
 
