@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="contacto.css">
-    <script src="script.js"></script>
+    
 
 </head>
 <body>
@@ -22,7 +22,7 @@
 
 
     <div class="container-form">
-    <form  action="" autocomplete="off" novalidate onsubmit="return validar()">
+    <form  id="formulario-1" action="" autocomplete="off" novalidate>
 
         <h1>Contacto</h1>
         <label class="label-form"  for="nombre">Nombre</label>
@@ -40,12 +40,21 @@
 
         <br>
         <br>
-        <button class="botoncito">Enviar</button>
+        <button class="botoncito" type="submit"">Enviar</button>
     </form>
 </div>
+    <div id="porfavoranda" style="display: none;">
+        <h2>Gracias <span id="nombre-usuario"></span></h2>
+        <h3>Telefono: <span id="telefono-divloco"></span></h3>
+        <h3>pronto te enviaremos un mensaje a <span id="correo-span"></span></span></h3>
+        
+
+    </div>
 
 
-    <script src="scrips.js"></script>
-    
+
+
+    <script src="script-cont.js"></script>
+
 </body>
 </html>

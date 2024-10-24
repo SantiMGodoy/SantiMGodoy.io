@@ -43,13 +43,15 @@ body {
 
 .container-form {
     max-width: 500px;
-    margin: 100px auto;
-    background-color: #8c0ac0;
+    margin: 0 auto;
+    background-color: #ffffff;
     text-align: center;
-    border: 3px solid #190931;
+    border: 3px solid rgb(178, 108, 235);
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+    margin-bottom: 5px;
 }
 
 .container-form h1 {
@@ -91,8 +93,18 @@ body {
 }
 
 .botoncito:hover {
-    background-color: #ffffff;
+    background-color: rgb(178, 108, 235);
     transition: 0.3s ease;
-    color: #190931;
+    
     cursor: pointer;
+}
+
+
+#porfavoranda{
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    border: solid 3px rgb(178, 108, 235) ;
 }
