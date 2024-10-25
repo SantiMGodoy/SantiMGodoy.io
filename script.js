@@ -1,4 +1,4 @@
-const imagenes = ['https://acdn.mitiendanube.com/stores/002/335/368/themes/rio/2-slide-1728048635508-8381649859-e4660720fc326517a569419cd167408b1728048606-1920-1920.webp?889369420','https://acdn.mitiendanube.com/stores/002/335/368/themes/rio/2-slide-1728395478852-2518524088-75d5b754b08dad0f66bfa2e8b9bf9c751728395449-1920-1920.webp?889369420','https://9z.gg/assets/home/Header.png'];
+const imagenes = ['imagenes/imagen9zventa.png', 'imagenes/imagen9z.png', 'imagenes/imagen9zventa2.png'];
 let indice=0;
 
 function mostrarImagen() {
